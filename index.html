@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Werkplekinspectie Formulier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="form-container">
+        <h1>Werkplekinspectie - Formulier FO-20</h1>
+
+        <div class="form-row">
+            <label>Inspectiedatum: <input type="date" name="inspectiedatum"></label>
+            <label>Inspectie door: <input type="text" name="inspectiedoor"></label>
+        </div>
+        <div class="form-row">
+            <label>Projectnummer: <input type="text" name="projectnummer"></label>
+            <label>Projectnaam: <input type="text" name="projectnaam"></label>
+        </div>
+        <div class="form-row">
+            <label>Inspectie bij: <input type="text" name="inspectiebij"></label>
+            <label>Paraaf: <input type="text" name="paraaf"></label>
+        </div>
+
+        <table>
+            <!-- Start of Persoonlijke beschermingsmiddelen  -->
+            <thead>
+                <tr>
+                    <th>Persoonlijke beschermingsmiddelen</th>
+                    <th class="radio-cell">OK</th>
+                    <th class="radio-cell">NOK</th>
+                    <th class="radio-cell">NVT</th>
+                    <th>Bijzonderheden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Helm</td>
+                    <td><input type="radio" name="helm" value="OK"></td>
+                    <td><input type="radio" name="helm" value="NOK"></td>
+                    <td><input type="radio" name="helm" value="NVT"></td>
+                    <td><input type="text" name="helm_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Handschoenen</td>
+                    <td><input type="radio" name="handschoenen" value="OK"></td>
+                    <td><input type="radio" name="handschoenen" value="NOK"></td>
+                    <td><input type="radio" name="handschoenen" value="NVT"></td>
+                    <td><input type="text" name="handschoenen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Overal</td>
+                    <td><input type="radio" name="overal" value="OK"></td>
+                    <td><input type="radio" name="overal" value="NOK"></td>
+                    <td><input type="radio" name="overal" value="NVT"></td>
+                    <td><input type="text" name="overal_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Werkschoenen</td>
+                    <td><input type="radio" name="werkschoenen" value="OK"></td>
+                    <td><input type="radio" name="werkschoenen" value="NOK"></td>
+                    <td><input type="radio" name="werkschoenen" value="NVT"></td>
+                    <td><input type="text" name="werkschoenen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Veiligheidsbril</td>
+                    <td><input type="radio" name="veiligheidsbril" value="OK"></td>
+                    <td><input type="radio" name="veiligheidsbril" value="NOK"></td>
+                    <td><input type="radio" name="veiligheidsbril" value="NVT"></td>
+                    <td><input type="text" name="veiligheidsbril_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Adembescherming</td>
+                    <td><input type="radio" name="adembescherming" value="OK"></td>
+                    <td><input type="radio" name="adembescherming" value="NOK"></td>
+                    <td><input type="radio" name="adembescherming" value="NVT"></td>
+                    <td><input type="text" name="adembescherming_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Gehoorbescherming</td>
+                    <td><input type="radio" name="gehoorbescherming" value="OK"></td>
+                    <td><input type="radio" name="gehoorbescherming" value="NOK"></td>
+                    <td><input type="radio" name="gehoorbescherming" value="NVT"></td>
+                    <td><input type="text" name="gehoorbescherming_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Valbeveiliging</td>
+                    <td><input type="radio" name="valbeveiliging" value="OK"></td>
+                    <td><input type="radio" name="valbeveiliging" value="NOK"></td>
+                    <td><input type="radio" name="valbeveiliging" value="NVT"></td>
+                    <td><input type="text" name="valbeveiliging_bijzonderheden"></td>
+                </tr>
+                <!-- End of Persoonlijke beschermingsmiddelen  -->
+            </tbody>
+
+            <!-- Start of (Gekeurde) veiligheidsmiddelen  -->
+            <thead>
+                <tr>
+                    <th>(Gekeurde) veiligheidsmiddelen</th>
+                    <th class="radio-cell">OK</th>
+                    <th class="radio-cell">NOK</th>
+                    <th class="radio-cell">NVT</th>
+                    <th>Bijzonderheden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elektrisch gereedschap</td>
+                    <td><input type="radio" name="elektrisch_gereedschap" value="OK"></td>
+                    <td><input type="radio" name="elektrisch_gereedschap" value="NOK"></td>
+                    <td><input type="radio" name="elektrisch_gereedschap" value="NVT"></td>
+                    <td><input type="text" name="elektrisch_gereedschap_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Brandblussers</td>
+                    <td><input type="radio" name="brandblussers" value="OK"></td>
+                    <td><input type="radio" name="brandblussers" value="NOK"></td>
+                    <td><input type="radio" name="brandblussers" value="NVT"></td>
+                    <td><input type="text" name="brandblussers_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>EHBO-doos</td>
+                    <td><input type="radio" name="EHBO-doos" value="OK"></td>
+                    <td><input type="radio" name="EHBO-doos" value="NOK"></td>
+                    <td><input type="radio" name="EHBO-doos" value="NVT"></td>
+                    <td><input type="text" name="EHBO-doos_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Hijs- en hefmateriaal</td>
+                    <td><input type="radio" name="hijs-en-hefmateriaal" value="OK"></td>
+                    <td><input type="radio" name="hijs-en-hefmateriaal" value="NOK"></td>
+                    <td><input type="radio" name="hijs-en-hefmateriaal" value="NVT"></td>
+                    <td><input type="text" name="hijs-en-hefmateriaal_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Lasdiesels en lasapparatuur</td>
+                    <td><input type="radio" name="lasdiesels-en-lasapparatuur" value="OK"></td>
+                    <td><input type="radio" name="lasdiesels-en-lasapparatuur" value="NOK"></td>
+                    <td><input type="radio" name="lasdiesels-en-lasapparatuur" value="NVT"></td>
+                    <td><input type="text" name="lasdiesels-en-lasapparatuur_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Draagbaar klimmateriaal, ladders en rolsteigers</td>
+                    <td><input type="radio" name="draagbaar_klimmateriaal" value="OK"></td>
+                    <td><input type="radio" name="draagbaar_klimmateriaal" value="NOK"></td>
+                    <td><input type="radio" name="draagbaar_klimmateriaal" value="NVT"></td>
+                    <td><input type="text" name="draagbaar_klimmateriaal_bijzonderheden"></td>
+                </tr>
+            </tbody>
+
+            <!-- End of (Gekeurde) veiligheidsmiddelen -->
+
+            <!-- Start of Veilig werken -->
+            <thead>
+                <tr>
+                    <th>Veilig werken</th>
+                    <th class="radio-cell">OK</th>
+                    <th class="radio-cell">NOK</th>
+                    <th class="radio-cell">NVT</th>
+                    <th>Bijzonderheden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Orde en netheid</td>
+                    <td><input type="radio" name="orde_en_netheid" value="OK"></td>
+                    <td><input type="radio" name="orde_en_netheid" value="NOK"></td>
+                    <td><input type="radio" name="orde_en_netheid" value="NVT"></td>
+                    <td><input type="text" name="orde_en_netheid_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Werkvergunningen</td>
+                    <td><input type="radio" name="werkvergunningen" value="OK"></td>
+                    <td><input type="radio" name="werkvergunningen" value="NOK"></td>
+                    <td><input type="radio" name="werkvergunningen" value="NVT"></td>
+                    <td><input type="text" name="werkvergunningen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Werken op hoogte</td>
+                    <td><input type="radio" name="werken_op_hoogte" value="OK"></td>
+                    <td><input type="radio" name="werken_op_hoogte" value="NOK"></td>
+                    <td><input type="radio" name="werken_op_hoogte" value="NVT"></td>
+                    <td><input type="text" name="werken_op_hoogte_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Werken in besloten ruimten</td>
+                    <td><input type="radio" name="werken_in_besloten_ruimten" value="OK"></td>
+                    <td><input type="radio" name="werken_in_besloten_ruimten" value="NOK"></td>
+                    <td><input type="radio" name="werken_in_besloten_ruimten" value="NVT"></td>
+                    <td><input type="text" name="werken_in_besloten_ruimten_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Werken met gevaarlijke stoffen</td>
+                    <td><input type="radio" name="werken_met_gevaarlijke_stoffen" value="OK"></td>
+                    <td><input type="radio" name="werken_met_gevaarlijke_stoffen" value="NOK"></td>
+                    <td><input type="radio" name="werken_met_gevaarlijke_stoffen" value="NVT"></td>
+                    <td><input type="text" name="werken_met_gevaarlijke_stoffen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Omgaan met afvalstoffen</td>
+                    <td><input type="radio" name="omgaan_met_afvalstoffen" value="OK"></td>
+                    <td><input type="radio" name="omgaan_met_afvalstoffen" value="NOK"></td>
+                    <td><input type="radio" name="omgaan_met_afvalstoffen" value="NVT"></td>
+                    <td><input type="text" name="omgaan_met_afvalstoffen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Gevaarlijke situaties</td>
+                    <td><input type="radio" name="gevaarlijke_situaties" value="OK"></td>
+                    <td><input type="radio" name="gevaarlijke_situaties" value="NOK"></td>
+                    <td><input type="radio" name="gevaarlijke_situaties" value="NVT"></td>
+                    <td><input type="text" name="gevaarlijke_situaties_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Gevaarlijke handelingen</td>
+                    <td><input type="radio" name="gevaarlijke_handelingen" value="OK"></td>
+                    <td><input type="radio" name="gevaarlijke_handelingen" value="NOK"></td>
+                    <td><input type="radio" name="gevaarlijke_handelingen" value="NVT"></td>
+                    <td><input type="text" name="gevaarlijke_handelingen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Lassen</td>
+                    <td><input type="radio" name="lassen" value="OK"></td>
+                    <td><input type="radio" name="lassen" value="NOK"></td>
+                    <td><input type="radio" name="lassen" value="NVT"></td>
+                    <td><input type="text" name="lassen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Slijpen</td>
+                    <td><input type="radio" name="slijpen" value="OK"></td>
+                    <td><input type="radio" name="slijpen" value="NOK"></td>
+                    <td><input type="radio" name="slijpen" value="NVT"></td>
+                    <td><input type="text" name="slijpen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>LMRA</td>
+                    <td><input type="radio" name="LMRA" value="OK"></td>
+                    <td><input type="radio" name="LMRA" value="NOK"></td>
+                    <td><input type="radio" name="LMRA" value="NVT"></td>
+                    <td><input type="text" name="LMRA_bijzonderheden"></td>
+                </tr>
+            </tbody>
+            <!-- End of Veilig werken -->
+
+            <thead>
+                <tr>
+                    <th>Overige</th>
+                    <th class="radio-cell">OK</th>
+                    <th class="radio-cell">NOK</th>
+                    <th class="radio-cell">NVT</th>
+                    <th>Bijzonderheden</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Incidenten en ongevallen</td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="OK"></td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="NOK"></td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="NVT"></td>
+                    <td><input type="text" name="incidenten_en_ongevallen_bijzonderheden"></td>
+                </tr>
+
+                <tr>
+                    <td>Veiligheidsinstructies/noodplannen(van de opdrachtgever)</td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="OK"></td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="NOK"></td>
+                    <td><input type="radio" name="incidenten_en_ongevallen" value="NVT"></td>
+                    <td><input type="text" name="incidenten_en_ongevallen_bijzonderheden"></td>
+                </tr>
+                <tr>
+                    <td>Resultaten van werkplekinspecties</td>
+                    <td><input type="radio" name="resultaten_van_werkplekinspecties" value="OK"></td>
+                    <td><input type="radio" name="resultaten_van_werkplekinspecties" value="NOK"></td>
+                    <td><input type="radio" name="resultaten_van_werkplekinspecties" value="NVT"></td>
+                    <td><input type="text" name="resultaten_van_werkplekinspecties_bijzonderheden"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+        <div class="section-title">Positieve bevindingen</div>
+        <textarea name="positieve_bevindingen" placeholder="Vul hier positieve bevindingen in..."></textarea>
+
+        <div class="section-title">Te nemen actie</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Actie</th>
+                    <th>Verantwoordelijke</th>
+                    <th>Plandatum</th>
+                    <th>Gereed d.d.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="actie"></td>
+                    <td><input type="text" name="verantwoordelijke"></td>
+                    <td><input type="date" name="plandatum"></td>
+                    <td><input type="date" name="gereed_dd"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title">Resultaat afhandeling (VGM-coördinator)</div>
+        <div class="form-row">
+            <label>Afgehandeld d.d.: <input type="date" name="afgehandeld_dd"></label>
+            <label>Paraaf: <input type="text" name="vgm_paraaf"></label>
+        </div>
+    </div>
+
+    <button class="pdf-button no-print" onclick="downloadPDF()">Download PDF</button>
+
+    <!-- PDF Export Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
