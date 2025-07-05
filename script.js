@@ -1,6 +1,19 @@
+window.addEventListener("DOMContentLoaded", () => {
+  const dateEl = document.getElementById("current-date");
+  const today = new Date();
+
+  const formatted = today.toLocaleDateString("nl-NL", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+
+  dateEl.textContent = formatted;
+});
+
 async function downloadPDF() {
   const { jsPDF } = window.jspdf;
-  const element = document.getElementById("form-container");
+  const element = document.getElementById("pdf-content");
 
   // Hide the button in PDF
   document.querySelector(".no-print").style.display = "none";
